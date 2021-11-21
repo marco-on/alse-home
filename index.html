@@ -4,26 +4,59 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
-        <meta name="author" content="" />
+        <meta name="author" content="Marco A. Ortiz" />
         <title>ALSE - Algoritmos en Sistemas Electrónicos</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
         <link href="css/custom2.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+        
     </head>
     <body>
         <div class="d-flex" id="wrapper">
             <!-- Sidebar-->
             <div class="border-end bg-white" id="sidebar-wrapper">
-                <div class="sidebar-heading border-bottom bg-light">Topics</div>
+                <div class="text-center sidebar-heading border-bottom bg-light">ALSE</div>
                 <div class="list-group list-group-flush">
-                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#m1">Dashboard</a>
-                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#m2">Shortcuts</a>
-                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#m3">Overview</a>
-                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#m4">Events</a>
-                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Profile</a>
-                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Status</a>
+                    <a class="link-dark list-group-item list-group-item-action list-group-item-light p-3" href="#id-about-alse">
+                        <i class="bi-info-circle" role="img" aria-label="About"></i>
+                        About
+                    </a>
+                    <a class="link-dark list-group-item list-group-item-action list-group-item-light p-3 collapsed " data-bs-toggle="collapse" data-bs-target="#procedures-collapse" href="#!">
+                        <i class="bi-bezier2" ></i>
+                        Procedures
+                    </a>
+                    <div class="collapse" aria-labelledby="dropdownMenuButton" id="procedures-collapse">
+                        <ul class="btn-toggle-nav list-group">
+                            <li><a href="#" class="link-secondary list-group-item">Overview</a></li>
+                            <li><a href="#" class="link-secondary list-group-item">Weekly</a></li>
+                            <li><a href="#" class="link-secondary list-group-item">Monthly</a></li>
+                        </ul>
+                    </div>                    
+                    <a class="link-dark list-group-item list-group-item-action list-group-item-light p-3 collapsed " data-bs-toggle="collapse" data-bs-target="#examples-collapse" href="#!">
+                        <i class="bi-braces" role="img" aria-label="Examples"></i>
+                        Examples
+                    </a>
+                    <div class="collapse" aria-labelledby="dropdownMenuButton" id="examples-collapse">
+                        <ul class="btn-toggle-nav list-group">
+                            <li><a href="#" class="link-secondary list-group-item">Overview</a></li>
+                            <li><a href="#" class="link-secondary list-group-item">Weekly</a></li>
+                            <li><a href="#" class="link-secondary list-group-item">Monthly</a></li>
+                        </ul>
+                    </div>
+                    <a class="link-dark list-group-item list-group-item-action list-group-item-light p-3 collapsed " data-bs-toggle="collapse" data-bs-target="#feedbacks-collapse" href="#!">
+                        <i class="bi-arrow-clockwise" role="img" aria-label="Feedbacks"></i>
+                        Feedbacks
+                    </a>
+                    <div class="collapse" aria-labelledby="dropdownMenuButton" id="feedbacks-collapse">
+                        <ul class="btn-toggle-nav list-group">
+                            <li><a href="#" class="link-secondary list-group-item">Overview</a></li>
+                            <li><a href="#" class="link-secondary list-group-item">Weekly</a></li>
+                            <li><a href="#" class="link-secondary list-group-item">Monthly</a></li>
+                        </ul>
+                    </div>                    
                 </div>
             </div>
             <!-- Page content wrapper-->
@@ -31,37 +64,58 @@
                 <!-- Top navigation-->
                 <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
                     <div class="container-fluid">
-                        <button class="btn btn-primary" id="sidebarToggle">Toggle Menu</button>
+                        <button class="btn btn-outline-primary " id="sidebarToggle">
+                            <i class="bi-menu-button-wide" role="img" aria-label="toggleMenu" ></i>
+                        </button>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
-                                <li class="nav-item active"><a class="nav-link" href="#!">Home</a></li>
-                                <li class="nav-item"><a class="nav-link" href="#!">Link</a></li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-                                    <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item" href="#!">Action</a>
-                                        <a class="dropdown-item" href="#!">Another action</a>
-                                        <div class="dropdown-divider"></div>
-                                        <a class="dropdown-item" href="#!">Something else here</a>
-                                    </div>
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="https://github.com/marco-on/alse-home" target="_blank" rel="noopener noreferrer">
+                                        <i class="bi-github" role="img" aria-label="GitHub"></i>
+                                        
+                                    </a>
                                 </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="https://campusvirtual.escuelaing.edu.co/moodle/login/index.php" target="_blank" rel="noopener noreferrer">
+                                        <img src="assets/icons/icons8-moodle-color.svg" alt="Campus virtual" width="24" height="24">
+                                        
+                                    </a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Tools</a>
+                                    <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown" id="id-refs-dropdown">
+                                        <a class="dropdown-item" href="https://code.visualstudio.com/docs" target="_blank" rel="noopener noreferrer">VS Code</a>
+                                        <a class="dropdown-item" href="https://doc.qt.io/" target="_blank" rel="noopener noreferrer" >Qt Creator</a>
+                                        <a class="dropdown-item" href="https://atom.io/docs" target="_blank" rel="noopener noreferrer" >Atom</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="https://www.doxygen.nl/manual/index.html" target="_blank" rel="noopener noreferrer">Doxygen</a>
+                                        <a class="dropdown-item" href="https://docs.staruml.io/" target="_blank" rel="noopener noreferrer">StarUML</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="https://www.boost.org/" target="_blank" rel="noopener noreferrer">Boost</a>
+                                        <a class="dropdown-item" href="https://eigen.tuxfamily.org" target="_blank" rel="noopener noreferrer">Eigen</a>
+                                        <a class="dropdown-item" href="https://www.cgal.org/documentation.html" target="_blank" rel="noopener noreferrer">CGAL</a>
+                                        <a class="dropdown-item" href="http://cs.baylor.edu/~donahoo/practical/CSockets/textcode.html" target="_blank" rel="noopener noreferrer">TCP/IP Sockets in C. 1st Ed.</a>
+                                        <a class="dropdown-item" href="http://cs.baylor.edu/~donahoo/practical/CSockets2/textcode.html" target="_blank" rel="noopener noreferrer">TCP/IP Sockets in C. 2nd Ed.</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="https://www.gnu.org/software/make/manual/make.html" target="_blank" rel="noopener noreferrer">GNU make</a>
+                                        <a class="dropdown-item" href="https://cmake.org/documentation/" target="_blank" rel="noopener noreferrer">CMake</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="https://www.sqlite.org/docs.html" target="_blank" rel="noopener noreferrer">SQLite</a>
+                                        <a class="dropdown-item" href="https://dev.mysql.com/doc/" target="_blank" rel="noopener noreferrer">MySQL</a>
+                                        <a class="dropdown-item" href="https://mariadb.org/documentation/" target="_blank" rel="noopener noreferrer">MariaDB</a>
+                                        <a class="dropdown-item" href="https://www.postgresql.org/docs/" target="_blank" rel="noopener noreferrer">PostgreSQL</a>
+                                        <a class="dropdown-item" href="https://docs.influxdata.com/" target="_blank" rel="noopener noreferrer">InfluxDB</a>                                        
+                                    </div>
+                                </li>                                
                             </ul>
                         </div>
                     </div>
                 </nav>
                 <!-- Page content-->
                 <div class="target">
-                    <div class="container-fluid" id="m1">
-                        <h1 class="mt-4">Simple Sidebar</h1>
-                        <p>The starting state of the menu will appear collapsed on smaller screens, and will appear non-collapsed on larger screens. When toggled using the button below, the menu will change.</p>
-                        <p>
-                            Make sure to keep all page content within the
-                            <code>#page-content-wrapper</code>
-                            . The top navbar is optional, and just for demonstration. Just create an element with the
-                            <code>#sidebarToggle</code>
-                            ID which will toggle the menu when clicked.
-                        </p>
+                    <div id="id-about-alse">
+                        <object class="container-fluid" type="text/html" data="About/about-alse.html"></object>
                     </div>
                     <div class="container-fluid" id="m2">
                         <h1 class="mt-4">Simple Sidebar222</h1>

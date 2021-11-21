@@ -10,3 +10,7 @@
 object, iframe{
     height:80vh;
 }
+
+#id-refs-dropdown > a{
+    font-size: 12px;
+}
