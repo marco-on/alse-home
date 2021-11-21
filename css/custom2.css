@@ -1,0 +1,12 @@
+.target > div {
+    display: none;
+}
+
+.target > div:target{
+    display: block;
+    height:fit-content;
+}
+
+object, iframe{
+    height:80vh;
+}
