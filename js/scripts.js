@@ -23,4 +23,7 @@ window.addEventListener('DOMContentLoaded', event => {
         });
     }
 
+    //setting document location to about-alse when loading site
+    document.location.hash = '#id-about-alse';
+
 });
