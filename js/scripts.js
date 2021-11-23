@@ -25,6 +25,6 @@ window.addEventListener('DOMContentLoaded', event => {
 
     //setting document location to about-alse when loading site
     //document.location.pathname = '#id-about-alse';
-    window.location.assign(document.location.pathname+'/#id-about-alse');
+    window.location.assign(document.location + '#id-about-alse');
 
 });
