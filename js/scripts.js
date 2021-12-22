@@ -24,11 +24,6 @@ window.addEventListener('DOMContentLoaded', event => {
     }
 
     //setting document location to about-alse when loading site
-    alert(document.location.hash);
-    alert(document.location.pathname);
-    alert(document.location.hostname);
     document.location.hash = '#id-about-alse';
-    alert(document.location.hash);
-    alert(document.location.pathname);
-    alert(document.location.hostname);
+
 });
