@@ -28,5 +28,7 @@ window.addEventListener('DOMContentLoaded', event => {
     alert(document.location.pathname);
     alert(document.location.hostname);
     document.location.hash = '#id-about-alse';
-
+    alert(document.location.hash);
+    alert(document.location.pathname);
+    alert(document.location.hostname);
 });
