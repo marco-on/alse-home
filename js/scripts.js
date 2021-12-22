@@ -24,6 +24,12 @@ window.addEventListener('DOMContentLoaded', event => {
     }
 
     //setting document location to about-alse when loading site
-    document.location.hash = '#id-about-alse';
-
+    
+    if (!document.location.hash)
+    {
+        //console.log("Empty location.hostname.. redirect to about");
+        document.location.hash = '#id-about-alse';
+    }
+    
+    
 });
